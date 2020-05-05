@@ -8,10 +8,16 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+
+    maven {
+        name = 'FukkitMC'
+        url = 'https://raw.githubusercontent.com/FukkitMC/fukkit-repo/master'
+    }
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "io.github.fukkitmc:gloom:2.0.8"
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
