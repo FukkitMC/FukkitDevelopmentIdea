@@ -17,12 +17,13 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation "io.github.fukkitmc:gloom:2.0.8"
+    implementation "io.github.fukkitmc:gloom:2.1.0"
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2020.1.1'
+    plugins = ['java']
 }
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
